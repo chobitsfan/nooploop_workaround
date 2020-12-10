@@ -1,6 +1,6 @@
 void setup() {
   // put your setup code here, to run once:
-  Serial1.begin(961200);
+  Serial1.begin(921600);
 }
 
 void loop() {
@@ -8,5 +8,5 @@ void loop() {
   char buf[128]={0x54,0,1};
   buf[127]=0x55;
   Serial1.write(buf,128);  
-  delay(2000);
+  delay(5000);
 }
